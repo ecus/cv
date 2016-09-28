@@ -345,7 +345,10 @@ span.selectOption {
 
 footer {
   background-color: #c3d600;
-  display: block; }
+  display: block;
+  left: 0;
+  right: 0;
+  width: 100%; }
   footer #footer_logo {
     background-color: #c3d600;
     color: #002f6c;
