@@ -398,19 +398,64 @@ li.active a div.novedad_sombra, li a:hover div.novedad_sombra {
 
   #menu_top {
     height: 86px;
-    padding-top: 29px; }
+    padding-top: 30px; }
     #menu_top #menu_top_menu {
-      text-align: right; }
+      text-align: center; }
     #menu_top #menu_top_logo {
       text-align: center; }
+      #menu_top #menu_top_logo a img {
+        height: 20px; }
+    #menu_top #menu_boton {
+      margin-top: -0.4em;
+      width: 2em;
+      color: transparent; }
 
   #header_home {
-    height: 332px;
-    background-image: url("../images/movil/header_fondo.jpg");
+    background-image: url("../images/imagen1.png");
     padding-top: 80px; }
 
   #header_home #header_logo_principal img {
     max-width: 310px; }
+
+  #slider {
+    height: 250px; }
+    #slider .item img {
+      height: 250px; }
+
+  .carousel_caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-bottom: 5em;
+    color: #fff;
+    text-align: left; }
+
+  .caption_h3 {
+    font-size: 0.9em;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 0; }
+
+  .caption_h4 {
+    font-size: 0.8em;
+    display: inline-block;
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 0.05em; }
+
+  .caption_p {
+    font-size: 1em;
+    text-align: left;
+    font-family: brandontextlight; }
+
+  .caption_btn {
+    color: #e2e2e2;
+    background-color: #012f6b;
+    border: none;
+    font-family: brandontextlight;
+    font-size: 0.7em; }
 
   form[name="frm_contacto"] .cle_textarea {
     width: 100%;
