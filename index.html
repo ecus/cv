@@ -1,11 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<title>Nutrition</title>
 	<meta charset="UTF-8">
-	<title>Personal Website</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="./plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="./css/style.css" rel="stylesheet" type="text/css" charset="utf-8">
+	<link href="./css/menu.css" rel="stylesheet" type="text/css" charset="utf-8">
 </head>
 <body>
 
-	<h1>Erik Urrutia</h1>
+	<div class="container-fluid" id="menu_top">
+		<div class="row">
+			<div class="col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-0" id="menu_top_logo">
+				<a href="/" title="" class="animsition-link">
+					<img src="./images/logo.png" alt="" width="">
+				</a>
+			</div>
+			<div class="col-xs-4 col-sm-4" id="menu_top_menu">
+				<a href="" title="" class="btn btn-menu btn-round">
+					CONT&Aacute;CTESE
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="" id="header_home">
+		<div id="header_logo_principal">
+			<a href="#" title="Ir a página principal.">
+				<img src="./images/logo_producto.png" alt=" imagen del logo" class="hidden-xs">
+				<span class="slogan_general hidden-xs"></span>
+				<img src="./images/logo_producto.png" alt=" imagen del logo" class="visible-xs">
+				<span class="slogan_movil visible-xs"></span>
+			</a>
+		</div>
+		<br />
+		<br />
+		<div id="">
+			<a href="#" title="Ir a página principal.">
+				<img src="./images/flechas.png" alt=" imagen del logo" class="hidden-xs">
+				<span class="slogan_general hidden-xs"></span>
+			</a>
+		</div>
+		<br />
+	</div>
+
+
+	<div id="seccion_videos">
+		<div class="seccion_videos_lineas bloque_lineas">
+			<div class="seccion_videos_contenedor">
+				<h2 class="titulo02">EL SECRETO ESTÁ EN EL DETALLE</h2>
+				<h3 class="titulo03">y nosotros lo sabemos muy bien</h3>
+				<br><br>
+				<a href="" title="" class="play">
+				</a><a href="#" class="bloque_video_youtube play" data-toggle="modal" data-target="#videoModal" data-video="http://www.youtube.com/embed/KcWaQb-lfrg?html5=1">
+					<img src="images/svg/play.svg" alt="imagen play">
+				</a>
+				<br>
+				<div class="seccion_videos_contenedor_pensamiento_autor">
+					<p class="pensamiento">
+
+						<!--Zayma trabaja bajo la premisa de la perfección y exigencia del acabado, por ello cuidamos nuestra materia prima para que nuestros trabajos sean de alta calidad.-->
+	ZAYMA trabaja bajo la premisa de la perfección y exigencia del acabado, por ello cuida su materia prima para que sus productos sean de alto estándar de calidad.
+					</p>
+					<p class="autor">
+						Zayma.
+					</p>
+				</div>
+
+			</div>
+			<div class="top"></div>
+			<div class="right"></div>
+			<div class="bottom"></div>
+			<div class="left"></div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						CERRAR
+					</button>
+				</div>
+				<div class="modal-body">
+					<div>
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="http://www.youtube.com/embed/KcWaQb-lfrg?html5=1"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--FIN VIDEOS-->
+
+	<!--FOOTER-->
+	<footer>
+		<div id="footer_menu_movil" class="container visible-xs">
+			<div class="row">
+				<div class="col-xs-12">
+					<a href="http://zayma.pe/nosotros/" title="" class="btn_footer">
+						NOSOTROS
+					</a>
+					<a href="http://zayma.pe/damas/" title="" class="btn_footer">
+						GALERÍA
+					</a>
+					<a href="http://zayma.pe/promociones/" title="" class="btn_footer">
+						PROMOCIONES
+					</a>
+					<a href="http://zayma.pe/novedades/" title="" class="btn_footer">
+						NOVEDADES
+					</a>
+					<a href="http://zayma.pe/contacto/" title="" class="btn_footer">
+						CONTACTO
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="footer_menu" class="container hidden-xs text-center">
+			<div class="row">
+				<div class="col-xs-12">
+					<a href="http://zayma.pe/nosotros/" title="" class="">
+						NOSOTROS
+					</a>
+					<a href="http://zayma.pe/damas/" title="" class="animsition-link">
+						GALERÍA
+					</a>
+					<a href="http://zayma.pe/promociones/" title="" class="">
+						PROMOCIONES
+					</a>
+					<a href="http://zayma.pe/novedades/" title="" class="">
+						NOVEDADES
+					</a>
+					<a href="http://zayma.pe/contacto/" title="" class="">
+						CONTACTO
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="footer_logo" class="text-center">
+			<a href="http://lifedigital.pe" title="Visitar LifeDigital">
+				<img src="http://zayma.pe/images/svg/logo_lifedigital.svg" alt="imagen de lifedigital" class="img-responsive" width="30"><br>
+			</a>
+	</footer>
+	<!--FIN FOOTER-->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+	<script src="./plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script>
+		$('.carousel').carousel();
+	</script>
 </body>
 </html>
