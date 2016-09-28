@@ -1,538 +1,59 @@
-@font-face {
-  font-family: "brandontextbold";
-  src: url("../fonts/brandontextbold.otf"); }
-@font-face {
-  font-family: "brandontextlight";
-  src: url("../fonts/brandontextlight.otf"); }
-@font-face {
-  font-family: "geosanslight";
-  src: url("../fonts/geosanslight.ttf"); }
-* {
-  font-family: brandontextbold, Arial, sans-serif;
-  font-size: 12px; }
+/*
+Error: File to import not found or unreadable: font-awesome/font-awesome.scss.
+        on line 23 of style.sass
 
-body {
-  position: relative; }
+18: 	src: url('../fonts/geosanslight.ttf')
+19: 
+20: // @import "font-awesome-sprockets"
+21: 
+22: // @import "font-awesome"
+23: @import "font-awesome/font-awesome.scss"
+24: //Estilos
+25: *
+26: 	// font-family: CaviarDreams, Arial, sans-serif
+27: 	font-family: brandontextbold, Arial, sans-serif
+28: 	font-size: 12px
 
-h2 {
-  font-family: BrandonText, Arial, sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center; }
-  h2.titulo01 {
-    color: #353f47; }
-  h2.titulo02 {
-    color: #e2e2e2; }
-
-h3 {
-  color: #474f53;
-  margin-top: 17px;
-  position: relative;
-  text-align: center; }
-  h3:after {
-    background-repeat: no-repeat;
-    bottom: -30px;
-    content: "";
-    display: inline-block;
-    height: 16px;
-    left: 50%;
-    margin-left: -60px;
-    position: absolute;
-    width: 119px; }
-  h3.titulo01 {
-    color: #353f47; }
-    h3.titulo01:after {
-      background-image: url("../images/svg/vector01.svg"); }
-  h3.titulo02, h3.titulo03 {
-    color: #e2e2e2; }
-    h3.titulo02:after, h3.titulo03:after {
-      background-image: url("../images/svg/vector02.svg"); }
-  h3.titulo04 {
-    color: #353f47; }
-    h3.titulo04:after {
-      background-image: url("../images/svg/vector02.svg"); }
-  h3.titulo05 {
-    color: #474f53;
-    font-family: BrandonText, Arial, sans-serif;
-    font-size: 26px;
-    font-weight: bold;
-    line-height: 60px;
-    margin-top: 17px;
-    position: relative;
-    text-align: center; }
-    h3.titulo05:after {
-      background-image: url("../images/svg/vector01.svg"); }
-
-#menu_top {
-  background-color: rgba(1, 47, 107, 0.69);
-  height: 110px;
-  z-index: 50;
-  position: fixed;
-  width: 100%;
-  text-align: center;
-  top: 0px;
-  vertical-align: middle; }
-  #menu_top #menu_top_logo a img {
-    height: 29px; }
-  #menu_top #menu_top_menu a {
-    border-color: #c3d600;
-    color: #e2e2e2; }
-  #menu_top #menu_boton {
-    font-family: geosanslight, Arial, sans-serif;
-    font-style: italic;
-    font-weight: lighter;
-    line-height: 32px; }
-    #menu_top #menu_boton a {
-      color: #e2e2e2; }
-      #menu_top #menu_boton a img {
-        margin-top: -0.4em;
-        width: 2em; }
-
-.btn-round {
-  border: 1px solid;
-  border-radius: 20px;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-top: 4px;
-  padding-bottom: 4px; }
-
-#header_home {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  text-align: center; }
-  #header_home #header_logo_principal {
-    margin: 0 15px; }
-    #header_home #header_logo_principal a:hover {
-      text-decoration: none; }
-    #header_home #header_logo_principal img {
-      max-width: 435px;
-      width: 100%;
-      margin: 0 auto; }
-    #header_home #header_logo_principal span.slogan_general {
-      color: #353f47;
-      display: block;
-      font-size: 18px;
-      font-style: oblique;
-      margin: 0 auto;
-      text-align: right;
-      width: 530px; }
-      #header_home #header_logo_principal span.slogan_general:hover {
-        text-decoration: none; }
-  #header_home #header_flujo img {
-    max-width: 40px; }
-
-#seccion_nosotros {
-  text-align: center; }
-  #seccion_nosotros #comentario {
-    font-size: 1em; }
-  #seccion_nosotros #titulo {
-    font-size: 2em;
-    color: #012f6b;
-    padding: 0; }
-    #seccion_nosotros #titulo #titulo1 {
-      display: block;
-      height: 1px;
-      border: 0;
-      border-top: 1px solid #012f6b;
-      margin: -0.7em;
-      padding: 0; }
-  #seccion_nosotros #texto {
-    font-size: 1.3em;
-    font-family: brandontextlight;
-    padding-bottom: 2em;
-    padding-top: 2em; }
-  #seccion_nosotros #btn_mas {
-    border: 0px;
-    background-color: #e2e2e2;
-    color: #525252;
-    font-family: brandontextlight; }
-
-#seccion_videos {
-  background-image: url("../images/fondo_video.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 661px;
-  padding: 30px; }
-  #seccion_videos .seccion_videos_lineas {
-    padding: 20px; }
-  #seccion_videos .seccion_videos_contenedor {
-    text-align: center; }
-    #seccion_videos .seccion_videos_contenedor a.play {
-      display: inline-block;
-      margin-bottom: 50px;
-      margin-top: 70px; }
-    #seccion_videos .seccion_videos_contenedor .seccion_videos_contenedor_pensamiento_autor {
-      color: #e2e2e2;
-      display: inline-block;
-      max-width: 650px; }
-      #seccion_videos .seccion_videos_contenedor .seccion_videos_contenedor_pensamiento_autor .pensamiento {
-        font-size: 23px;
-        font-style: oblique; }
-      #seccion_videos .seccion_videos_contenedor .seccion_videos_contenedor_pensamiento_autor .autor {
-        margin-top: 21px;
-        text-align: right; }
-
-form[name=frm_contacto] .error {
-  color: #e2e2e2;
-  text-align: left;
-  width: 100%; }
-
-span.selected {
-  overflow: hidden;
-  padding: 14px;
-  width: calc(100% - 50px); }
-span.selectArrow {
-  display: block;
-  padding-top: 13px;
-  text-align: center;
-  width: 50px;
-  position: relative;
-  float: left;
-  height: 54px;
-  z-index: 1;
-  cursor: pointer; }
-span.selected {
-  position: relative;
-  float: left;
-  height: 54px;
-  z-index: 1;
-  cursor: pointer; }
-
-div.selectOptions {
-  display: none;
-  left: -1px;
-  overflow: hidden;
-  padding-top: 0;
-  position: absolute;
-  top: 54px;
-  width: 300px; }
-
-span.selectOption {
-  border-bottom: 1px solid;
-  cursor: pointer;
-  display: block;
-  height: 52px;
-  padding: 14px;
-  width: 100%; }
-  span.selectOption:last-of-type {
-    border-bottom: none; }
-
-.select_contacto {
-  background-color: rgba(50, 64, 67, 0.4);
-  border: 1px solid #e2e2e2;
-  color: #e2e2e2;
-  margin-bottom: -5px; }
-  .select_contacto div.selectOptions {
-    background-color: #324043;
-    border: 1px solid #e2e2e2; }
-  .select_contacto span.selectOption:hover {
-    color: #324043;
-    background: #e2e2e2; }
-
-footer {
-  background-color: #c3d600;
-  display: block; }
-  footer #footer_logo {
-    background-color: #c3d600;
-    color: #012f6b;
-    display: table;
-    padding-bottom: 7px;
-    padding-top: 25px;
-    width: 100%; }
-    footer #footer_logo a img {
-      background-color: #012f6b;
-      display: inline-block;
-      padding-bottom: 16px;
-      text-align: center; }
-
-#footer_menu {
-  padding-top: 15px;
-  color: #012f6b;
-  font-size: 0.8em; }
-  #footer_menu a {
-    color: #012f6b;
-    display: inline-block;
-    padding: 0 10px; }
-    #footer_menu a:hover {
-      text-decoration: none; }
-
-#footer_menu_movil .btn_footer {
-  border-bottom: 1px solid #757d83;
-  color: #012f6b;
-  display: block;
-  font-size: 18px;
-  padding: 20px 0;
-  text-align: center;
-  width: 100%; }
-  #footer_menu_movil .btn_footer:hover {
-    background-color: #2c343b;
-    text-decoration: none; }
-
-li.active a div.novedad_sombra, li a:hover div.novedad_sombra {
-  opacity: 1; }
-
-.carousel-fade .carousel-inner .item {
-  transition-property: opacity;
-  opacity: 0; }
-.carousel-fade .carousel-inner .active {
-  opacity: 1; }
-  .carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
-    opacity: 0; }
-.carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
-  opacity: 1; }
-.carousel-fade .carousel-inner .next, .carousel-fade .carousel-inner .prev {
-  left: 0;
-  transform: translate3d(0, 0, 0); }
-.carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
-  left: 0;
-  transform: translate3d(0, 0, 0); }
-.carousel-fade .carousel-control {
-  z-index: 2; }
-
-.carousel {
-  height: 100%; }
-
-.carousel-inner {
-  height: 100%; }
-  .carousel-inner .item {
-    height: 100%; }
-
-.carousel_caption {
-  position: absolute;
-  right: 15%;
-  bottom: 20px;
-  left: 15%;
-  z-index: 10;
-  padding-bottom: 10em;
-  color: #fff;
-  text-align: left; }
-
-.caption_h3 {
-  color: #FFF;
-  text-transform: uppercase;
-  text-align: left;
-  margin-bottom: 0; }
-
-.caption_h4 {
-  display: inline-block;
-  border-bottom: 1px solid #FFF;
-  padding-bottom: 0.05em; }
-
-.caption_p {
-  text-align: left;
-  font-family: brandontextlight; }
-
-.caption_btn {
-  color: #e2e2e2;
-  background-color: #012f6b;
-  border: none;
-  font-family: brandontextlight; }
-
-.carousel_caption .btn {
-  text-shadow: none; }
-
-#scene {
-  position: relative; }
-
-.vision_titulo {
-  color: #e2e2e2;
-  font-family: BrandonText;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 31px;
-  text-align: right; }
-
-.vision_texto {
-  color: #e2e2e2;
-  font-size: 18px;
-  margin-bottom: 80px;
-  line-height: 26px; }
-
-#videoModal .modal-dialog .modal-content {
-  background-color: transparent;
-  border: medium none;
-  border-radius: 0;
-  box-shadow: none; }
-  #videoModal .modal-dialog .modal-content .modal-header {
-    border: medium none;
-    padding: 15px;
-    text-align: center; }
-    #videoModal .modal-dialog .modal-content .modal-header .close {
-      color: #e2e2e2;
-      display: block;
-      float: none;
-      font-size: 15px;
-      font-weight: normal;
-      margin: 0 auto;
-      opacity: 1;
-      text-shadow: none; }
-  #videoModal .modal-dialog .modal-content .modal-body {
-    padding: 15px 0 0; }
-
-.modal-backdrop.modal_fondo_home_video {
-  background-color: #2c343b; }
-.modal-backdrop.modal_fondo_producto_carrusel {
-  background-color: rgba(234, 227, 208, 0.5); }
-.modal-backdrop.in {
-  opacity: 0.8; }
-
-.modal-pc {
-  width: 1150px; }
-
-#myModalProductoCarrusel .modal-pc, #myModalProductoCarrusel .modal-content, #myModalProductoCarrusel .modal-body {
-  padding: 0; }
-
-@media (max-width: 480px) {
-  #videoModal .modal-dialog {
-    margin-top: 120px; }
-
-  #producto_carrusel .carousel-control.left, #producto_carrusel .carousel-control.right {
-    background-size: 35px auto; } }
-@media (max-width: 1150px) {
-  .modal-pc {
-    width: 100%; } }
-@media (max-width: 767px) {
-  body {
-    margin-top: 86px; }
-
-  #menu_top {
-    height: 86px;
-    padding-top: 30px; }
-    #menu_top #menu_top_menu {
-      text-align: center; }
-    #menu_top #menu_top_logo {
-      text-align: center; }
-      #menu_top #menu_top_logo a img {
-        height: 20px; }
-    #menu_top #menu_boton {
-      margin-top: -0.4em;
-      width: 2em;
-      color: transparent; }
-
-  #header_home {
-    background-image: url("../images/imagen1.png");
-    padding-top: 80px; }
-
-  #header_home #header_logo_principal img {
-    max-width: 310px; }
-
-  #slider {
-    height: 250px; }
-    #slider .item img {
-      height: 250px; }
-
-  .carousel_caption {
-    position: absolute;
-    right: 15%;
-    bottom: 20px;
-    left: 15%;
-    z-index: 10;
-    padding-bottom: 5em;
-    color: #fff;
-    text-align: left; }
-
-  .caption_h3 {
-    font-size: 1em;
-    color: #FFF;
-    text-transform: uppercase;
-    text-align: left;
-    margin-bottom: 0; }
-
-  .caption_h4 {
-    font-size: 1em;
-    display: inline-block;
-    border-bottom: 1px solid #FFF;
-    padding-bottom: 0.05em; }
-
-  .caption_p {
-    font-size: 1.1em;
-    text-align: left;
-    font-family: brandontextlight; }
-
-  .caption_btn {
-    color: #e2e2e2;
-    background-color: #012f6b;
-    border: none;
-    font-family: brandontextlight;
-    font-size: 0.8em; }
-
-  form[name="frm_contacto"] .cle_textarea {
-    width: 100%;
-    height: 221px; }
-
-  #seccion_videos {
-    padding: 15px; }
-    #seccion_videos .seccion_videos_contenedor a.play {
-      margin-top: 30px;
-      margin-bottom: 20px; }
-    #seccion_videos .seccion_videos_contenedor .seccion_videos_contenedor_pensamiento_autor .pensamiento {
-      font-size: 18px; }
-    #seccion_videos .seccion_videos_contenedor .seccion_videos_contenedor_pensamiento_autor .autor {
-      margin-top: 15px; }
-
-  #producto_carrusel .carousel-indicators {
-    bottom: 0; }
-  #producto_carrusel .carousel-control.left, #producto_carrusel .carousel-control.right {
-    background-size: 50px auto; }
-
-  #myModalProductoCarrusel .modal-pc {
-    margin: 150px 0px 0px; } }
-@media (min-width: 768px) {
-  #menu_top {
-    height: 66px;
-    padding-top: 17px; }
-    #menu_top #menu_top_menu {
-      text-align: center; }
-
-  #header_home {
-    background-image: url("../images/imagen1.png");
-    height: 100%;
-    padding-top: 153px; }
-
-  #header_galeria {
-    background-image: url("../images/galeria_header_fondo.jpg");
-    height: 422px;
-    padding-top: 140px; }
-
-  #seccion_nosotros {
-    background-image: url("../images/imagen2.png");
-    background-size: 100% 100%;
-    height: 100%;
-    padding-top: 3em; }
-
-  #seccion_conocenos {
-    padding: 30px 0; }
-
-  #seccion_contacto {
-    background-image: url("../images/fondo_contacto1920.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    height: 100%;
-    min-height: 580px;
-    padding: 20px 0 40px;
-    width: 100%; }
-
-  form[name=frm_contacto] .contenedor_input {
-    width: 300px; }
-  form[name=frm_contacto] textarea.campo {
-    resize: none;
-    width: 630px; }
-
-  .frm_contacto_contenedor_input_telefono:after {
-    display: inline-block;
-    position: relative;
-    border: 1px solid #e2e2e2;
-    content: "";
-    display: block;
-    height: 8px;
-    position: absolute;
-    width: 8px;
-    right: -7px;
-    top: -7px; } }
-@media (min-width: 1500px) {
-  #seccion_videos {
-    background-size: 100% auto; } }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.sass:23
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: font-awesome/font-awesome.scss.\A         on line 23 of style.sass\A \A 18: 	src: url('../fonts/geosanslight.ttf')\A 19: \A 20: // @import \"font-awesome-sprockets\"\A 21: \A 22: // @import \"font-awesome\"\A 23: @import \"font-awesome/font-awesome.scss\"\A 24: //Estilos\A 25: *\A 26: 	// font-family: CaviarDreams, Arial, sans-serif\A 27: 	font-family: brandontextbold, Arial, sans-serif\A 28: 	font-size: 12px"; }
